@@ -1,0 +1,18 @@
+PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - IQKeyboardManagerSwift (4.0.0)
+  - TextFieldEffects (1.1.1)
+
+DEPENDENCIES:
+  - ChameleonFramework/Swift
+  - IQKeyboardManagerSwift
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
+
+COCOAPODS: 0.39.0
