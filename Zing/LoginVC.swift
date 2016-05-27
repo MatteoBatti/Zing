@@ -13,6 +13,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var CF: UITextField!
+    @IBOutlet weak var passoword: UITextField!
     
     
     override func viewDidLoad() {
@@ -60,13 +61,19 @@ class LoginVC: UIViewController {
             return false
         }
         
+        if self.passoword.text != "PasswordZingBG" {
+            self.passoword.becomeFirstResponder()
+            return false
+        }
+        
         return true
     }
     
     private func isLoggedIn() -> Bool {
         if  UD.stringForKey(key_first_name)?.characters.count > 0 &&
             UD.stringForKey(key_last_name)?.characters.count > 0 &&
-            UD.stringForKey(key_cf)?.characters.count > 0 {
+            UD.stringForKey(key_cf)?.characters.count > 0 &&
+            UD.stringForKey(key_password) == "PasswordZingBG"{
                 return true
         } else {
             return false
@@ -77,6 +84,7 @@ class LoginVC: UIViewController {
         UD.setValue(self.firstName.text, forKey: key_first_name)
         UD.setValue(self.lastName.text, forKey: key_last_name)
         UD.setValue(self.CF.text, forKey: key_cf)
+        UD.setValue(self.passoword.text, forKey: key_password)
         UD.synchronize()
     }
     

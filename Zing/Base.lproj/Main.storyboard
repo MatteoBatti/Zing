@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4kX-0W-1Zm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4kX-0W-1Zm">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--LoginVC-->
@@ -64,6 +64,48 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKL-JH-Hgs" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="220" y="298" width="160" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="vKz-Z0-As8"/>
+                                </constraints>
+                                <color key="textColor" red="0.12637259070000001" green="0.12639245390000001" blue="0.1263653636" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.1899853349" green="0.35768887399999999" blue="0.43821841480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-R8-nYD" customClass="ZingButton" customModule="Zing" customModuleProvider="target">
+                                <rect key="frame" x="220" y="373" width="160" height="45"/>
+                                <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Xcr-kz-5lp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openZingAngleRecorder" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ueh-ll-tJh"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="C.F." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pys-np-rrA" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="220" y="238" width="160" height="45"/>
                                 <constraints>
@@ -87,30 +129,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-R8-nYD" customClass="ZingButton" customModule="Zing" customModuleProvider="target">
-                                <rect key="frame" x="220" y="313" width="160" height="45"/>
-                                <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Xcr-kz-5lp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="openZingAngleRecorder" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ueh-ll-tJh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="G5S-Hz-SY6" firstAttribute="top" secondItem="Usi-Eh-hMB" secondAttribute="bottom" constant="15" id="7Ym-CI-cd2"/>
                             <constraint firstItem="G5S-Hz-SY6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7a2-Kv-1vf"/>
+                            <constraint firstItem="KKL-JH-Hgs" firstAttribute="top" secondItem="Pys-np-rrA" secondAttribute="bottom" constant="15" id="9Ze-cz-n63"/>
+                            <constraint firstItem="KKL-JH-Hgs" firstAttribute="trailing" secondItem="Pys-np-rrA" secondAttribute="trailing" id="CLs-Q4-dzY"/>
                             <constraint firstItem="G5S-Hz-SY6" firstAttribute="width" secondItem="Usi-Eh-hMB" secondAttribute="width" id="IYM-Ie-gDC"/>
                             <constraint firstItem="G5S-Hz-SY6" firstAttribute="width" secondItem="Pys-np-rrA" secondAttribute="width" id="NFH-e6-Mbi"/>
                             <constraint firstItem="JrS-R8-nYD" firstAttribute="centerX" secondItem="Pys-np-rrA" secondAttribute="centerX" id="Wwp-dz-Qyk"/>
@@ -118,8 +143,9 @@
                             <constraint firstItem="Pys-np-rrA" firstAttribute="top" secondItem="G5S-Hz-SY6" secondAttribute="bottom" constant="15" id="eGb-2P-zHo"/>
                             <constraint firstItem="JrS-R8-nYD" firstAttribute="width" secondItem="Pys-np-rrA" secondAttribute="width" id="erW-1k-KUq"/>
                             <constraint firstItem="G5S-Hz-SY6" firstAttribute="centerX" secondItem="Pys-np-rrA" secondAttribute="centerX" id="kGf-Dn-gwa"/>
+                            <constraint firstItem="KKL-JH-Hgs" firstAttribute="leading" secondItem="Pys-np-rrA" secondAttribute="leading" id="kUr-E4-vSB"/>
+                            <constraint firstItem="JrS-R8-nYD" firstAttribute="top" secondItem="KKL-JH-Hgs" secondAttribute="bottom" constant="30" id="tQ9-ph-uIG"/>
                             <constraint firstItem="G5S-Hz-SY6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="uE0-cc-glf"/>
-                            <constraint firstItem="JrS-R8-nYD" firstAttribute="top" secondItem="Pys-np-rrA" secondAttribute="bottom" constant="30" id="xzV-3k-MmS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fdj-fN-3Nc"/>
@@ -127,6 +153,7 @@
                         <outlet property="CF" destination="Pys-np-rrA" id="4c1-OB-mSM"/>
                         <outlet property="firstName" destination="Usi-Eh-hMB" id="Kvv-VQ-53J"/>
                         <outlet property="lastName" destination="G5S-Hz-SY6" id="rex-3S-2Km"/>
+                        <outlet property="passoword" destination="KKL-JH-Hgs" id="a9e-UA-e7d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,16 +175,107 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="360°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-8W-NDK">
                                 <rect key="frame" x="161" y="131" width="279" height="178"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="130"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-Pa-mIj" customClass="ZingButton" customModule="Zing" customModuleProvider="target">
+                                <rect key="frame" x="221" y="317" width="160" height="45"/>
+                                <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="eFC-Kz-0ux"/>
+                                    <constraint firstAttribute="width" constant="160" id="xzd-dh-oSD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Inizia Session">
+                                    <color key="titleColor" red="0.1899853349" green="0.35768887399999999" blue="0.43821841480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startSession" destination="RDn-bq-okP" eventType="touchUpInside" id="MQn-vS-Wku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-LA-SPK" customClass="ZingButton" customModule="Zing" customModuleProvider="target">
+                                <rect key="frame" x="221" y="317" width="160" height="45"/>
+                                <color key="backgroundColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="EbO-U1-WXX"/>
+                                    <constraint firstAttribute="width" constant="160" id="xXP-S4-2Hf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Stop Session">
+                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="endSession" destination="RDn-bq-okP" eventType="touchUpInside" id="yC3-sG-5js"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYh-ho-CBc" customClass="ZingButton" customModule="Zing" customModuleProvider="target">
+                                <rect key="frame" x="221" y="317" width="160" height="45"/>
+                                <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="JLm-Ea-sUl"/>
+                                    <constraint firstAttribute="width" constant="160" id="T9b-AP-ksM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Invia i Dati">
+                                    <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendMessage" destination="RDn-bq-okP" eventType="touchUpInside" id="OiT-fZ-YUq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-WT-euy">
+                                <rect key="frame" x="221" y="382" width="160" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ftG-t7-GmH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZJe-Xf-EAe">
+                                <rect key="frame" x="291" y="377" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ZJe-Xf-EAe" firstAttribute="centerX" secondItem="BYh-ho-CBc" secondAttribute="centerX" id="6lI-68-Qyl"/>
+                            <constraint firstItem="4yO-WT-euy" firstAttribute="centerX" secondItem="BYh-ho-CBc" secondAttribute="centerX" id="7Qx-ac-7m5"/>
+                            <constraint firstItem="4yO-WT-euy" firstAttribute="width" secondItem="BYh-ho-CBc" secondAttribute="width" id="8ea-uV-WRb"/>
+                            <constraint firstItem="Ubs-Pa-mIj" firstAttribute="top" secondItem="n9G-8W-NDK" secondAttribute="bottom" constant="8" id="R3q-gG-gMw"/>
                             <constraint firstItem="n9G-8W-NDK" firstAttribute="centerY" secondItem="CqV-M3-YKF" secondAttribute="centerY" constant="-80" id="RRc-ZF-G01"/>
+                            <constraint firstItem="4yO-WT-euy" firstAttribute="top" secondItem="BYh-ho-CBc" secondAttribute="bottom" constant="20" id="WD0-O6-ewh"/>
+                            <constraint firstItem="ZJe-Xf-EAe" firstAttribute="top" secondItem="BYh-ho-CBc" secondAttribute="bottom" constant="15" id="WyX-VA-KUh"/>
                             <constraint firstItem="n9G-8W-NDK" firstAttribute="centerX" secondItem="CqV-M3-YKF" secondAttribute="centerX" id="cPV-GS-QtL"/>
+                            <constraint firstItem="BYh-ho-CBc" firstAttribute="top" secondItem="n9G-8W-NDK" secondAttribute="bottom" constant="8" id="n5B-ru-2kP"/>
+                            <constraint firstItem="VoP-LA-SPK" firstAttribute="centerX" secondItem="Ubs-Pa-mIj" secondAttribute="centerX" id="rFj-YC-c1b"/>
+                            <constraint firstItem="VoP-LA-SPK" firstAttribute="top" secondItem="n9G-8W-NDK" secondAttribute="bottom" constant="8" id="rdg-H4-OKO"/>
+                            <constraint firstItem="Ubs-Pa-mIj" firstAttribute="centerX" secondItem="n9G-8W-NDK" secondAttribute="centerX" id="sKW-9f-OxS"/>
+                            <constraint firstItem="BYh-ho-CBc" firstAttribute="centerX" secondItem="VoP-LA-SPK" secondAttribute="centerX" id="yAd-uf-egw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZJe-Xf-EAe" id="43o-k1-HaG"/>
+                        <outlet property="btnSend" destination="BYh-ho-CBc" id="IL4-cN-rYV"/>
+                        <outlet property="btnStart" destination="Ubs-Pa-mIj" id="edh-aQ-FZS"/>
+                        <outlet property="btnStop" destination="VoP-LA-SPK" id="BaB-L7-v75"/>
+                        <outlet property="lblAngle" destination="n9G-8W-NDK" id="FSv-CS-wMG"/>
+                        <outlet property="lblInfo" destination="4yO-WT-euy" id="Dys-uF-6gL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEc-aO-zjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

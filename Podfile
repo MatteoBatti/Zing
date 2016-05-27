@@ -6,7 +6,8 @@ use_frameworks!
 
 target 'Zing' do
 pod 'ChameleonFramework/Swift'
-pod "TextFieldEffects"
+pod 'TextFieldEffects'
 pod 'IQKeyboardManagerSwift'
+pod 'mailcore2-ios'
 end
 

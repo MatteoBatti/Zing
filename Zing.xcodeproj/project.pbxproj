@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF21F94F1CA32E1C00DDE4AC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF21F94E1CA32E1C00DDE4AC /* CoreMotion.framework */; };
+		AF21F9511CA33A5A00DDE4AC /* GmailSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21F9501CA33A5A00DDE4AC /* GmailSender.swift */; };
 		AF6E57691CA0881F00B16ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E57681CA0881F00B16ED1 /* AppDelegate.swift */; };
 		AF6E576B1CA0881F00B16ED1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E576A1CA0881F00B16ED1 /* LoginVC.swift */; };
 		AF6E576E1CA0881F00B16ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6E576C1CA0881F00B16ED1 /* Main.storyboard */; };
@@ -21,6 +23,9 @@
 		11C37AABD3BECCE02D5F5B5F /* Pods-Zing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zing/Pods-Zing.debug.xcconfig"; sourceTree = "<group>"; };
 		2E4B96901041B4D1126FD7EA /* Pods_Zing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8272042DACEBF37F422F83D /* Pods-Zing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zing/Pods-Zing.release.xcconfig"; sourceTree = "<group>"; };
+		AF21F94E1CA32E1C00DDE4AC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AF21F9501CA33A5A00DDE4AC /* GmailSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailSender.swift; sourceTree = "<group>"; };
+		AF21F9521CA33B7800DDE4AC /* Zing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zing-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF6E57651CA0881F00B16ED1 /* Zing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6E57681CA0881F00B16ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6E576A1CA0881F00B16ED1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF21F94F1CA32E1C00DDE4AC /* CoreMotion.framework in Frameworks */,
 				D2FAAB1FFC8D5127B9210DC9 /* Pods_Zing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +53,7 @@
 		52B439F4D8917AA8CEF25FB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF21F94E1CA32E1C00DDE4AC /* CoreMotion.framework */,
 				2E4B96901041B4D1126FD7EA /* Pods_Zing.framework */,
 			);
 			name = Frameworks;
@@ -64,6 +71,7 @@
 		AF6E575C1CA0881F00B16ED1 = {
 			isa = PBXGroup;
 			children = (
+				AF21F9521CA33B7800DDE4AC /* Zing-Bridging-Header.h */,
 				AF6E57671CA0881F00B16ED1 /* Zing */,
 				AF6E57661CA0881F00B16ED1 /* Products */,
 				9B27697F569FB4267C749680 /* Pods */,
@@ -84,6 +92,7 @@
 			children = (
 				AF80DEF51CA08E9E00BFD167 /* Common */,
 				AF6E57681CA0881F00B16ED1 /* AppDelegate.swift */,
+				AF21F9501CA33A5A00DDE4AC /* GmailSender.swift */,
 				AF6E576A1CA0881F00B16ED1 /* LoginVC.swift */,
 				AF80DEF81CA0994100BFD167 /* ZingAngleRecorderVC.swift */,
 				AF6E576C1CA0881F00B16ED1 /* Main.storyboard */,
@@ -229,6 +238,7 @@
 				AF6E57691CA0881F00B16ED1 /* AppDelegate.swift in Sources */,
 				AF80DEF91CA0994100BFD167 /* ZingAngleRecorderVC.swift in Sources */,
 				AF80DEF71CA08EB200BFD167 /* ZingButton.swift in Sources */,
+				AF21F9511CA33A5A00DDE4AC /* GmailSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +354,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Zing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = matteobattistini.Zing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MB.Zing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zing-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -357,9 +370,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Zing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = matteobattistini.Zing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MB.Zing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Zing-Bridging-Header.h";
 			};
 			name = Release;
 		};
